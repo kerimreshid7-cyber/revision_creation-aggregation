@@ -27,4 +27,8 @@ SELECT c.name, o.order_id
 FROM customers c
 FULL JOIN orders o ON c.customer_id = o.customer_id;
 
-
+/*left join (mostly used by bi analysts)will give us the all discribed datavalues for the table 
+that written in left(in this case on the top)
+right opposite from left
+full join will  give the sum of left and right join (with their null corespondence also) 
+inner join remove all null relation and will give the relation with real values.*/

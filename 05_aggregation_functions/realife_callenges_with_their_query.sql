@@ -7,6 +7,7 @@ FROM orders o
 JOIN customers c ON o.customer_id = c.customer_id
 JOIN products p ON o.product_id = p.product_id
 GROUP BY c.name;
+-- here we are using normal join   but if we want we can use left join or any types of joins.
 
 
 /*Challenge 11 — COUNT orders per city*/
@@ -36,4 +37,6 @@ JOIN customers c ON o.customer_id = c.customer_id
 JOIN products p ON o.product_id = p.product_id
 GROUP BY c.name
 HAVING SUM(p.price * o.quantity) > 1000;
-
+  /*1 where 'c'  comes from? it just tric we can use abrivation like this customers c.
+    2 having is like where but for groups insteade of indivisual rows
+     it filteres after the aggregation has been done.*/

@@ -1,0 +1,9 @@
+Project Overview
+
+This project demonstrates core SQL concepts essential for Business Intelligence (BI) professionals.
+It covers:
+Database creation and table management
+Data insertion, updates, and deletion
+Joins to combine related tables
+Aggregation functions to summarize business data
+The dataset simulates a company environment with employees, departments, and orders, enabling practical BI queries.
